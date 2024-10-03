@@ -1,0 +1,69 @@
+# Docker-related files
+Dockerfile
+docker-compose.yml
+docker-compose.override.yml
+.dockerignore
+
+# Docker volumes
+docker_volumes/
+
+# Docker build context
+.docker-build-context/
+
+# Ignore any files or directories that start with .docker
+.docker*
+
+# Ignore Docker-generated files
+*.env
+
+# Exclude build artifacts and binaries
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Exclude logs
+*.log
+
+# Exclude temporary files
+*.tmp
+*.swp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE-specific files (uncomment as needed)
+# .vscode/
+# .idea/
+# *.sublime-project
+# *.sublime-workspace
+
+# Dependency directories (uncomment if you're not tracking these)
+# node_modules/
+# vendor/
+
+# Compiled source
+*.com
+*.class
+*.o
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.sql
+*.sqlite
