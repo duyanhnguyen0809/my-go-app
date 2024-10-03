@@ -5,10 +5,10 @@ RUN git clone https://github.com/duyanhnguyen0809/my-go-app.git
 
 FROM golang:1.20-alpine AS builder
 WORKDIR /app
-COPY --from=git /my-go-app ./
+COPY --from=git ./my-go-app ./
 RUN go mod init myapp
 RUN go env -w CGO_ENABLED=0 GOOS=linux GOARCH=amd64 
-RUN go build -a -installsuffix cgo -o myapp .
+RUN go build -a -installsuffix cgo -o myapp ./my-go-app
 
 
 FROM scratch
